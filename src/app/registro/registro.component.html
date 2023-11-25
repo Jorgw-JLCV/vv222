@@ -1,0 +1,56 @@
+<div class="bootstrap-wrapper mt-5">
+  <div class="container">
+    <div class="row mt20">
+      <div class="col-md-6 offset-md-3">
+        <mat-card>
+          <div class="container text-center mt-4 ">
+            <img src="../../../assets/r-reciclaje.png" width="100" height="100">
+          </div>
+
+          <h1 class="text-center mb-2">Registrar cuenta</h1>
+
+          <form>
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Nombre</mat-label>
+              <input matInput type="text" id="nombre" placeholder="Ingrese su nombre" required>
+              <mat-hint>El nombre de usuario debe ser valido</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Edad</mat-label>
+              <input matInput type="text" id="edad" placeholder="Ingrese su edad" required>
+            </mat-form-field>
+
+            <!-- Repite la estructura para cada campo requerido -->
+
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Correo electrónico</mat-label>
+              <input matInput type="email" id="correo" placeholder="Ingrese su correo electrónico" required>
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Nombre de usuario</mat-label>
+              <input matInput type="text" id="username" placeholder="Ingrese su nombre de usuario" required>
+              <mat-hint>El nombre de usuario debe ser unico</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Contraseña</mat-label>
+              <input matInput type="password" id="password" placeholder="Ingrese su contraseña" required>
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>DNI</mat-label>
+              <input matInput type="text" id="dni" placeholder="Ingrese su DNI" required>
+            </mat-form-field>
+
+            <div class="container text-center  mt-1">
+              <button type="submit" mat-raised-button color="primary">Registrar</button>
+              <button type="reset" style="margin-left: 20px;" mat-raised-button color="accent">Limpiar</button>
+            </div>
+          </form>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

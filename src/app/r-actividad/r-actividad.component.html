@@ -1,0 +1,53 @@
+<div class="bootstrap-wrapper mt-5">
+  <div class="container">
+      <div class="row mt20">
+          <div class="col-md-6 offset-md-3">
+              <mat-card>
+                  <div class="container text-center mt-4 mb-2">
+                      <img src="../../../assets/r-reciclaje.png" width="100" height="100">
+                  </div>
+
+                  <h1 class="text-center">Registrar actividad reciclaje</h1>
+                  
+                  <form>
+                    <div class="mb-1">
+                      <label for="nombreCompleto" class="form-label text-light">Nombre Completo:</label>
+                      <input type="text" class="form-control" id="nombreCompleto" placeholder="Ingrese su nombre completo"
+                        required>
+                    </div>
+                    <div class="mb-1">
+                      <label for="fecha" class="form-label text-light">Fecha:</label>
+                      <input type="date" class="form-control" id="fecha" required>
+                    </div>
+                    <div class="mb-1">
+                      <label for="correo" class="form-label text-light">Correo electrónico:</label>
+                      <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico"
+                        required>
+                    </div>
+                    <div class="mb-1">
+                      <label for="tipoResiduo" class="form-label text-light">Tipo de Residuo:</label>
+                      <select class="form-select" id="tipoResiduo" required>
+                        <option value="" disabled selected>Seleccione un tipo</option>
+                        <option value="organico">Orgánico</option>
+                        <option value="inorganico">Inorgánico</option>
+                        </select>
+                    </div>
+                    <div class="mb-1">
+                      <label for="peso" class="form-label text-light">Peso (en kg):</label>
+                      <input type="number" class="form-control" id="peso" placeholder="Ingrese el peso en kg" required>
+                    </div>
+                    <div class="mb-1">
+                      <label for="imagen" class="form-label text-light">Subir Imagen:</label>
+                      <input type="file" class="form-control" id="imagen" required>
+                    </div>
+                    <div class="container text-center mb-4 mt-4">
+                      <button type="submit" mat-raised-button color="primary">Registrar</button>
+                      <button type="reset" style="margin-left: 20px;" mat-raised-button
+                        color="accent">Limpiar</button>
+                    </div>
+                  </form>
+              </mat-card>
+          </div>
+      </div>
+  </div>
+</div>

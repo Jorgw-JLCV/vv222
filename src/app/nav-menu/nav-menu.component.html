@@ -1,0 +1,26 @@
+<mat-toolbar style="color: rgb(249, 255, 249); background-color: green" class="custom-toolbar">
+  <div>
+    <a [routerLink]="'/'" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      
+    </a>
+    <span>RECICLA UPAO</span>
+  </div>
+
+  <div class="right-buttons">
+    <button mat-button [matMenuTriggerFor]="menuRegistrar">Iniciar sesión</button>
+    <mat-menu #menuRegistrar="matMenu">
+      <button mat-menu-item routerLink="iniciarSesion">Iniciar Sesión</button>
+      <button mat-menu-item routerLink="registro">Crear cuenta</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="menuRecompensa">Recompensas</button>
+    <mat-menu #menuRecompensa="matMenu">
+      <button mat-menu-item routerLink="r-actividad">Registrar actividad</button>
+      <button mat-menu-item routerLink="historial">Mostrar actividad</button>
+      <button mat-menu-item routerLink="lista-recompensa">Ver recompensa</button>
+      <button mat-menu-item routerLink="r-comunidad">Crear recompensa</button>
+    </mat-menu>
+  </div>
+</mat-toolbar>
+
+<!-- Aquí van tus cards o cualquier otro contenido -->
